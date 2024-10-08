@@ -1,14 +1,16 @@
 package org.example.cryptojavafx;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private Button btn;
+
+    @FXML
+    private void click(ActionEvent event) {
+        btn.setText("You've clicked!");
     }
 }
