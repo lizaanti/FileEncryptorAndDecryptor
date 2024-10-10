@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="org.example.cryptojavafx.HelloController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER"
+      spacing="20.0">
+    <HBox>
+        <ComboBox/>
+        <TextField fx:id="pathField" HBox.hgrow="ALWAYS" editable="false"/>
+    </HBox>
+    <TableView  fx:id="CryptoTable" VBox.vgrow="ALWAYS"/>
+    <HBox spacing="5">
+        <Button text="Шифровать" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnEncryptionAction"/>
+        <Button text="Дешифровать" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnDecryptionAction"/>
+        <Button text="Открыть файл" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnOpenFileAction"/>
+        <Button text="Выход" maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#btnExitAction"/>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+    </HBox>
+</VBox>
+
